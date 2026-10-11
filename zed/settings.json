@@ -1,0 +1,81 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "base_keymap": "VSCode",
+  "theme": {
+    "mode": "system",
+    "light": "MacOS Prism Light",
+    "dark": "MacOS Prism Dark"
+  },
+  "icon_theme": {
+    "mode": "system",
+    "light": "JetBrains New UI Icons (Light)",
+    "dark": "JetBrains New UI Icons (Dark)"
+  },
+  "buffer_font_family": "Lilex",
+  "buffer_font_size": 16,
+  "markdown_preview": {
+    "font_family": "IBM Plex Sans",
+    "code_font_family": "Lilex"
+  },
+
+  "tab_size": 2,
+  "soft_wrap": "editor_width",
+  "line_ending": "prefer_lf",
+  "minimap": {
+    "show": "always"
+  },
+
+  "project_panel": {
+    "dock": "left",
+    "folder_indicator": "chevron"
+  },
+  "terminal": {
+    "toolbar": {
+      "breadcrumbs": true
+    },
+    "show_count_badge": false,
+    "flexible": true,
+    "dock": "right",
+    "starts_open": true
+  },
+
+  "git": {
+    "inline_blame": {
+      "location": "status_bar"
+    }
+  },
+
+  "languages": {
+    "PHP": {
+      "tab_size": 4
+    },
+    "JSON": {
+      "format_on_save": "on",
+      "formatter": "language_server"
+    }
+  },
+
+  "agent_servers": {
+    "grok-build": {
+      "type": "registry"
+    },
+    "cursor": {
+      "type": "registry"
+    },
+    "claude": {
+      "type": "registry"
+    }
+  },
+
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  }
+}
