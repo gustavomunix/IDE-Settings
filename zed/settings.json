@@ -1,37 +1,36 @@
-// Zed settings
-//
-// For information on how to configure Zed, see the Zed
-// documentation: https://zed.dev/docs/configuring-zed
-//
-// To see all of Zed's default settings without changing your
-// custom settings, run `zed: open default settings` from the
-// command palette (cmd-shift-p / ctrl-shift-p)
 {
+  // ── Geral ──────────────────────────────────────────
   "base_keymap": "VSCode",
+
+  // ── Aparência ──────────────────────────────────────
   "theme": {
     "mode": "system",
-    "light": "MacOS Prism Light",
-    "dark": "MacOS Prism Dark"
+    "light": "JetBrains Light",
+    "dark": "JetBrains Dark"
   },
   "icon_theme": {
     "mode": "system",
     "light": "JetBrains New UI Icons (Light)",
     "dark": "JetBrains New UI Icons (Dark)"
   },
+  "ui_font_family": "IBM Plex Sans",
+  "ui_font_size": 16,
   "buffer_font_family": "Lilex",
   "buffer_font_size": 16,
   "markdown_preview": {
     "font_family": "IBM Plex Sans",
     "code_font_family": "Lilex"
   },
-
-  "tab_size": 2,
-  "soft_wrap": "editor_width",
-  "line_ending": "prefer_lf",
   "minimap": {
     "show": "always"
   },
 
+  // ── Editor ─────────────────────────────────────────
+  "tab_size": 2,
+  "soft_wrap": "editor_width",
+  "line_ending": "prefer_lf",
+
+  // ── Layout dos painéis ─────────────────────────────
   "project_panel": {
     "dock": "left",
     "folder_indicator": "chevron"
@@ -46,12 +45,14 @@
     "starts_open": true
   },
 
+  // ── Git ────────────────────────────────────────────
   "git": {
     "inline_blame": {
       "location": "status_bar"
     }
   },
 
+  // ── Linguagens ─────────────────────────────────────
   "languages": {
     "PHP": {
       "tab_size": 4
@@ -62,18 +63,15 @@
     }
   },
 
+  // ── Agentes ────────────────────────────────────────
   "agent_servers": {
-    "grok-build": {
-      "type": "registry"
-    },
-    "cursor": {
-      "type": "registry"
-    },
-    "claude": {
-      "type": "registry"
-    }
+    "grok-build": { "type": "registry" },
+    "cursor": { "type": "registry" },
+    "codex-acp": { "type": "registry" },
+    "claude-acp": { "type": "registry" }
   },
 
+  // ── Privacidade ────────────────────────────────────
   "telemetry": {
     "diagnostics": false,
     "metrics": false
