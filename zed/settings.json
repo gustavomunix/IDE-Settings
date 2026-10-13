@@ -1,6 +1,10 @@
 {
   // ── Geral ──────────────────────────────────────────
   "base_keymap": "VSCode",
+  "confirm_quit": true,
+  "session": {
+    "trust_all_worktrees": true
+  },
 
   // ── Aparência ──────────────────────────────────────
   "theme": {
@@ -16,13 +20,9 @@
   "ui_font_family": "IBM Plex Sans",
   "ui_font_size": 16,
   "buffer_font_family": "Lilex",
-  "buffer_font_size": 16,
   "markdown_preview": {
     "font_family": "IBM Plex Sans",
     "code_font_family": "Lilex"
-  },
-  "minimap": {
-    "show": "always"
   },
 
   // ── Editor ─────────────────────────────────────────
@@ -34,15 +34,6 @@
   "project_panel": {
     "dock": "left",
     "folder_indicator": "chevron"
-  },
-  "terminal": {
-    "toolbar": {
-      "breadcrumbs": true
-    },
-    "show_count_badge": false,
-    "flexible": true,
-    "dock": "right",
-    "starts_open": true
   },
 
   // ── Git ────────────────────────────────────────────
@@ -61,14 +52,6 @@
       "format_on_save": "on",
       "formatter": "language_server"
     }
-  },
-
-  // ── Agentes ────────────────────────────────────────
-  "agent_servers": {
-    "grok-build": { "type": "registry" },
-    "cursor": { "type": "registry" },
-    "codex-acp": { "type": "registry" },
-    "claude-acp": { "type": "registry" }
   },
 
   // ── Privacidade ────────────────────────────────────
