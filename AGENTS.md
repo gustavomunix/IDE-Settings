@@ -69,7 +69,7 @@ Regras:
 
 Limites de provedor: `opencode-go` aceita high/xhigh/max; `claude-agent` aceita no máximo high. `claude-agent/opus` só em `plan`.
 
-## Custo
+## Modelos e custo
 
 Teto por 1M de tokens: input **$1,50**, output **$2,50**. Modelo acima do teto fica `disabled` no `opencode.jsonc`.
 
