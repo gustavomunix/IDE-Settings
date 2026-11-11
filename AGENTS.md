@@ -68,3 +68,9 @@ Regras:
 `max` só sob pedido explícito. Não use `max` como default. Effort faz parte do bloco: não troque a cada mensagem.
 
 Limites de provedor: `opencode-go` aceita high/xhigh/max; `claude-agent` aceita no máximo high. `claude-agent/opus` só em `plan`.
+
+## Custo
+
+Teto por 1M de tokens: input **$1,50**, output **$2,50**. Modelo acima do teto fica `disabled` no `opencode.jsonc`.
+
+`opencode-go/gemini-4-argon` custa $2/$10 e está bloqueado. Contexto longo usa `antigravity-shim/gemini-4-argon-high`, que consome cota Antigravity.
