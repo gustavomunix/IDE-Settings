@@ -1,0 +1,85 @@
+{
+  "version": 1,
+  "enabled": true,
+  "fallback": {
+    "model": {
+      "providerID": "opencode-go",
+      "modelID": "deepseek-v4.1-flash"
+    },
+    "variant": "high"
+  },
+  "minConfidence": 0.6,
+  "preserveCache": true,
+  "categories": {
+    "trivial": {
+      "builtin": true,
+      "model": {
+        "providerID": "opencode-go",
+        "modelID": "mimo-v2.6-flash"
+      }
+    },
+    "research": {
+      "builtin": true,
+      "model": {
+        "providerID": "opencode-go",
+        "modelID": "glm-5.3-flash"
+      },
+      "variant": "high"
+    },
+    "implement": {
+      "builtin": true,
+      "model": {
+        "providerID": "opencode-go",
+        "modelID": "deepseek-v4.1-flash"
+      },
+      "variant": "high"
+    },
+    "hard": {
+      "builtin": true,
+      "model": {
+        "providerID": "opencode-go",
+        "modelID": "deepseek-v4.1-flash"
+      },
+      "variant": "xhigh"
+    },
+    "terminal": {
+      "builtin": false,
+      "name": "Terminal",
+      "description": "Shell, DevOps, install, permissions, processes, logs. Requires running commands and reading their output, not design judgement.",
+      "model": {
+        "providerID": "opencode-go",
+        "modelID": "glm-5.3-flash"
+      },
+      "variant": "high"
+    },
+    "patch": {
+      "builtin": false,
+      "name": "Patch",
+      "description": "Fix existing code with a clear, bounded diff: bug with known cause, failing test, small or medium code change. Not for open-ended architecture or unknown-cause debugging.",
+      "model": {
+        "providerID": "opencode-go",
+        "modelID": "qwen3.8-flash"
+      },
+      "variant": "xhigh"
+    },
+    "long-context": {
+      "builtin": false,
+      "name": "Long context",
+      "description": "Work that needs more than 200K tokens of context, a whole repository, PDFs, images, or many files. Not for short questions.",
+      "model": {
+        "providerID": "antigravity-shim",
+        "modelID": "gemini-4-argon-high"
+      }
+    },
+    "muse-cheap": {
+      "builtin": false,
+      "name": "Muse cheap",
+      "description": "General tasks, including private code, where Muse Spark 1.3 Contributor is acceptable. Contributor may train on data; use is the user's choice.",
+      "model": {
+        "providerID": "opencode-go",
+        "modelID": "muse-spark-1.3-contributor"
+      },
+      "variant": "xhigh"
+    }
+  }
+}

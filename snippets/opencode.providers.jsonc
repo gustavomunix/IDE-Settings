@@ -1,0 +1,481 @@
+// Trecho para colar em ~/.config/opencode/opencode.jsonc.
+// Fonte: opencode.jsonc de 2026-11-11. Preços e status vivem em docs/models.md.
+// Regra: input <= $1,50/1M e output <= $2,50/1M.
+// Shims (claude-agent, claude-luciana, antigravity-shim) são assinatura, não $0.
+// OpenCode não tem política por modelo; o bloqueio é "disabled": true.
+// opencode-go/gemini-4-argon ($2/$10) fica desativado. Use antigravity-shim/gemini-4-argon-high.
+{
+  "model": "opencode-go/deepseek-v4.1-flash",
+  "agents": {
+    "plan": {
+      "model": "claude-agent/opus#high"
+    },
+    "general": {
+      "model": "opencode-go/deepseek-v4.1-flash#high"
+    },
+    "explore": {
+      "model": "opencode-go/glm-5.3-flash#high"
+    }
+  },
+  "providers": {
+    "meta": {
+      "models": {
+        "muse-spark-1.1": {
+          "disabled": true
+        },
+        "muse-spark-1.2": {
+          "disabled": true
+        },
+        "muse-wonder-1.0": {
+          "disabled": true
+        },
+        "muse-spark-1.2-contributor": {
+          "disabled": true
+        },
+        "muse-spark-1.3": {
+          "disabled": true
+        },
+        "muse-ember-1.0": {
+          "disabled": true
+        }
+      }
+    },
+    "claude-luciana": {
+      "name": "Claude (Luciana)",
+      "package": "@opencode/ai/providers/openai-compatible",
+      "settings": {
+        "baseURL": "http://127.0.0.1:8125/v1",
+        "apiKey": "dummy"
+      },
+      "models": {
+        "claude-opus-5-5": {
+          "modelID": "claude-opus-5-5",
+          "name": "Claude Opus 5.5",
+          "limit": {
+            "context": 1000000,
+            "output": 128000
+          },
+          "capabilities": {
+            "tools": true,
+            "temperature": true,
+            "input": [
+              "text",
+              "image"
+            ]
+          }
+        },
+        "claude-opus-5-5-fast": {
+          "modelID": "claude-opus-5-5:fast",
+          "name": "Claude Opus 5.5 Fast",
+          "limit": {
+            "context": 1000000,
+            "output": 128000
+          },
+          "capabilities": {
+            "tools": true,
+            "temperature": true,
+            "input": [
+              "text",
+              "image"
+            ]
+          }
+        },
+        "claude-sonnet-5-5": {
+          "modelID": "claude-sonnet-5-5",
+          "name": "Claude Sonnet 5.5",
+          "limit": {
+            "context": 1000000,
+            "output": 128000
+          },
+          "capabilities": {
+            "tools": true,
+            "temperature": true,
+            "input": [
+              "text",
+              "image"
+            ]
+          }
+        },
+        "claude-haiku-5-5": {
+          "modelID": "claude-haiku-5-5",
+          "name": "Claude Haiku 5.5",
+          "limit": {
+            "context": 1000000,
+            "output": 128000
+          },
+          "capabilities": {
+            "tools": true,
+            "temperature": true,
+            "input": [
+              "text",
+              "image"
+            ]
+          }
+        }
+      }
+    },
+    "antigravity-shim": {
+      "name": "Antigravity (shim)",
+      "package": "@opencode/ai/providers/openai-compatible",
+      "settings": {
+        "baseURL": "http://127.0.0.1:8123/v1",
+        "apiKey": "dummy"
+      },
+      "models": {
+        "gemini-3.5-flash-lite": {
+          "modelID": "gemini-3.5-flash-lite",
+          "name": "3.5 Flash Lite",
+          "limit": {
+            "context": 1048576,
+            "output": 64000
+          },
+          "capabilities": {
+            "tools": true,
+            "temperature": true,
+            "input": [
+              "text",
+              "image"
+            ]
+          }
+        },
+        "gemini-3.8-flash-low": {
+          "modelID": "gemini-3.8-flash-low",
+          "name": "Flash Low",
+          "limit": {
+            "context": 1048576,
+            "output": 64000
+          },
+          "capabilities": {
+            "tools": true,
+            "temperature": true,
+            "input": [
+              "text",
+              "image"
+            ]
+          }
+        },
+        "gemini-3.8-flash-medium": {
+          "modelID": "gemini-3.8-flash-medium",
+          "name": "Flash Med",
+          "limit": {
+            "context": 1048576,
+            "output": 64000
+          },
+          "capabilities": {
+            "tools": true,
+            "temperature": true,
+            "input": [
+              "text",
+              "image"
+            ]
+          }
+        },
+        "gemini-3.8-flash-high": {
+          "modelID": "gemini-3.8-flash-high",
+          "name": "Flash High",
+          "limit": {
+            "context": 1048576,
+            "output": 64000
+          },
+          "capabilities": {
+            "tools": true,
+            "temperature": true,
+            "input": [
+              "text",
+              "image"
+            ]
+          }
+        },
+        "gemini-4-argon-low": {
+          "modelID": "gemini-4-argon-low",
+          "name": "Argon Low",
+          "limit": {
+            "context": 1048576,
+            "output": 64000
+          },
+          "capabilities": {
+            "tools": true,
+            "temperature": true,
+            "input": [
+              "text",
+              "image"
+            ]
+          }
+        },
+        "gemini-4-argon-medium": {
+          "modelID": "gemini-4-argon-medium",
+          "name": "Argon Med",
+          "limit": {
+            "context": 1048576,
+            "output": 64000
+          },
+          "capabilities": {
+            "tools": true,
+            "temperature": true,
+            "input": [
+              "text",
+              "image"
+            ]
+          }
+        },
+        "gemini-4-argon-high": {
+          "modelID": "gemini-4-argon-high",
+          "name": "Argon High",
+          "limit": {
+            "context": 1048576,
+            "output": 64000
+          },
+          "capabilities": {
+            "tools": true,
+            "temperature": true,
+            "input": [
+              "text",
+              "image"
+            ]
+          }
+        },
+        "claude-sonnet-5-5-low": {
+          "modelID": "claude-sonnet-5-5-low",
+          "name": "Sonnet Low",
+          "limit": {
+            "context": 1000000,
+            "output": 64000
+          },
+          "capabilities": {
+            "tools": true,
+            "temperature": true,
+            "input": [
+              "text",
+              "image"
+            ]
+          }
+        },
+        "claude-sonnet-5-5-medium": {
+          "modelID": "claude-sonnet-5-5-medium",
+          "name": "Sonnet Med",
+          "limit": {
+            "context": 1000000,
+            "output": 64000
+          },
+          "capabilities": {
+            "tools": true,
+            "temperature": true,
+            "input": [
+              "text",
+              "image"
+            ]
+          }
+        },
+        "claude-sonnet-5-5-high": {
+          "modelID": "claude-sonnet-5-5-high",
+          "name": "Sonnet High",
+          "limit": {
+            "context": 1000000,
+            "output": 64000
+          },
+          "capabilities": {
+            "tools": true,
+            "temperature": true,
+            "input": [
+              "text",
+              "image"
+            ]
+          }
+        },
+        "claude-opus-5-5-high": {
+          "modelID": "claude-opus-5-5-high",
+          "name": "Opus High",
+          "limit": {
+            "context": 1000000,
+            "output": 64000
+          },
+          "capabilities": {
+            "tools": true,
+            "temperature": true,
+            "input": [
+              "text",
+              "image"
+            ]
+          }
+        }
+      }
+    },
+    "claude-agent": {
+      "models": {
+        "claude-fable-5": {
+          "disabled": true
+        },
+        "claude-haiku-4-5-20251001": {
+          "disabled": true
+        },
+        "claude-opus-4-6": {
+          "disabled": true
+        },
+        "claude-opus-4-7": {
+          "disabled": true
+        },
+        "claude-opus-4-8": {
+          "disabled": true
+        },
+        "claude-opus-5": {
+          "disabled": true
+        },
+        "claude-sonnet-4-6": {
+          "disabled": true
+        },
+        "claude-sonnet-5": {
+          "disabled": true
+        },
+        "fable": {
+          "disabled": true
+        },
+        "haiku": {},
+        "claude-fable-5-2": {
+          "disabled": true
+        },
+        "sonnet": {},
+        "opus": {}
+      }
+    },
+    "opencode": {
+      "models": {
+        "beam-free": {
+          "disabled": true
+        },
+        "big-pickle": {
+          "disabled": true
+        },
+        "crouton-alpha-free": {
+          "disabled": true
+        },
+        "deepseek-v4.1-flash-free": {},
+        "flint-40b-free": {
+          "disabled": true
+        },
+        "iceman-free": {
+          "disabled": true
+        },
+        "inkling-2-small-free": {},
+        "longcat-2.5-free": {},
+        "mimo-v2.6-flash-free": {
+          "disabled": true
+        },
+        "nemotron-3.5-lightning-free": {
+          "disabled": true
+        },
+        "nemotron-3.5-super-vl-free": {},
+        "minimax-m3.1-flash-free": {}
+      }
+    },
+    "opencode-go": {
+      "models": {
+        "beam-free": {
+          "disabled": true
+        },
+        "crouton-alpha-free": {
+          "disabled": true
+        },
+        "deepseek-v4-pro": {
+          "disabled": true
+        },
+        "glm-5.2": {
+          "disabled": true
+        },
+        "glm-5.3": {
+          "disabled": true
+        },
+        "gpt-5.6-luna": {
+          "disabled": true
+        },
+        "gpt-6-luna": {
+          "disabled": true
+        },
+        "grok-4.7": {
+          "disabled": true
+        },
+        "hy3": {
+          "disabled": true
+        },
+        "hy4": {
+          "disabled": true
+        },
+        "hy4-preview": {
+          "disabled": true
+        },
+        "iceman-contributor-free": {
+          "disabled": true
+        },
+        "kimi-k2.7-code": {
+          "disabled": true
+        },
+        "kimi-k3": {
+          "disabled": true
+        },
+        "longcat-2.0": {
+          "disabled": true
+        },
+        "longcat-2.5-free": {
+          "disabled": true
+        },
+        "mimo-v2.5": {
+          "disabled": true
+        },
+        "mimo-v2.5-pro": {
+          "disabled": true
+        },
+        "minimax-m3": {
+          "disabled": true
+        },
+        "minimax-m3.1-flash": {
+          "disabled": true
+        },
+        "muse-spark-1.2-contributor": {
+          "disabled": true
+        },
+        "qwen3.7-plus": {
+          "disabled": true
+        },
+        "qwen3.8-max": {
+          "disabled": true
+        },
+        "step-5-preview": {
+          "disabled": true
+        },
+        "kimi-k3.1-pro": {
+          "disabled": true
+        },
+        "gemini-4-argon": {
+          "disabled": true
+        }
+      }
+    },
+    "xai": {
+      "models": {
+        "grok-4.20-0309-non-reasoning": {
+          "disabled": true
+        },
+        "grok-4.20-0309-reasoning": {
+          "disabled": true
+        },
+        "grok-4.20-multi-agent-0309": {
+          "disabled": true
+        },
+        "grok-4.3": {
+          "disabled": true
+        },
+        "grok-4.5": {
+          "disabled": true
+        },
+        "grok-4.6": {
+          "disabled": true
+        },
+        "grok-build-0.1": {
+          "disabled": true
+        },
+        "grok-4.7": {
+          "disabled": true
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,695 @@
+{
+  "language_models": {
+    "opencode": {
+      "show_zen_models": false,
+      "show_go_models": true
+    },
+    "openai_compatible": {
+      "Claude (Mletras)": {
+        "api_url": "http://127.0.0.1:8124/v1",
+        "available_models": [
+          {
+            "name": "claude-opus-5-5",
+            "display_name": "Claude Opus 5.5",
+            "max_tokens": 1000000,
+            "capabilities": {
+              "tools": true,
+              "images": true,
+              "parallel_tool_calls": false,
+              "prompt_cache_key": false,
+              "chat_completions": true,
+              "interleaved_reasoning": false,
+              "max_tokens_parameter": false
+            },
+            "reasoning_effort": "high",
+            "reasoning_effort_levels": [
+              "low",
+              "medium",
+              "high",
+              "xhigh",
+              "max"
+            ]
+          },
+          {
+            "name": "claude-sonnet-5-5",
+            "display_name": "Claude Sonnet 5.5",
+            "max_tokens": 1000000,
+            "capabilities": {
+              "tools": true,
+              "images": true,
+              "parallel_tool_calls": false,
+              "prompt_cache_key": false,
+              "chat_completions": true,
+              "interleaved_reasoning": false,
+              "max_tokens_parameter": false
+            },
+            "reasoning_effort": "high",
+            "reasoning_effort_levels": [
+              "low",
+              "medium",
+              "high",
+              "xhigh",
+              "max"
+            ]
+          },
+          {
+            "name": "claude-haiku-5-5",
+            "display_name": "Claude Haiku 5.5",
+            "max_tokens": 1000000,
+            "capabilities": {
+              "tools": true,
+              "images": true,
+              "parallel_tool_calls": false,
+              "prompt_cache_key": false,
+              "chat_completions": true,
+              "interleaved_reasoning": false,
+              "max_tokens_parameter": false
+            },
+            "reasoning_effort": "high",
+            "reasoning_effort_levels": [
+              "low",
+              "medium",
+              "high",
+              "xhigh",
+              "max"
+            ]
+          }
+        ]
+      },
+      "Claude (Luciana)": {
+        "api_url": "http://127.0.0.1:8125/v1",
+        "available_models": [
+          {
+            "name": "claude-opus-5-5",
+            "display_name": "Claude Opus 5.5",
+            "max_tokens": 1000000,
+            "capabilities": {
+              "tools": true,
+              "images": true,
+              "parallel_tool_calls": false,
+              "prompt_cache_key": false,
+              "chat_completions": true,
+              "interleaved_reasoning": false,
+              "max_tokens_parameter": false
+            },
+            "reasoning_effort": "high",
+            "reasoning_effort_levels": [
+              "low",
+              "medium",
+              "high",
+              "xhigh",
+              "max"
+            ]
+          },
+          {
+            "name": "claude-sonnet-5-5",
+            "display_name": "Claude Sonnet 5.5",
+            "max_tokens": 1000000,
+            "capabilities": {
+              "tools": true,
+              "images": true,
+              "parallel_tool_calls": false,
+              "prompt_cache_key": false,
+              "chat_completions": true,
+              "interleaved_reasoning": false,
+              "max_tokens_parameter": false
+            },
+            "reasoning_effort": "high",
+            "reasoning_effort_levels": [
+              "low",
+              "medium",
+              "high",
+              "xhigh",
+              "max"
+            ]
+          },
+          {
+            "name": "claude-haiku-5-5",
+            "display_name": "Claude Haiku 5.5",
+            "max_tokens": 1000000,
+            "capabilities": {
+              "tools": true,
+              "images": true,
+              "parallel_tool_calls": false,
+              "prompt_cache_key": false,
+              "chat_completions": true,
+              "interleaved_reasoning": false,
+              "max_tokens_parameter": false
+            },
+            "reasoning_effort": "high",
+            "reasoning_effort_levels": [
+              "low",
+              "medium",
+              "high",
+              "xhigh",
+              "max"
+            ]
+          }
+        ]
+      },
+      "Meta": {
+        "api_url": "https://api.meta.ai/v1",
+        "available_models": [
+          {
+            "name": "muse-spark-1.3-contributor",
+            "display_name": "Muse Spark 1.3 Contributor",
+            "max_tokens": 1048576,
+            "max_output_tokens": 131072,
+            "reasoning_effort": "medium",
+            "capabilities": {
+              "tools": true,
+              "images": true,
+              "parallel_tool_calls": true,
+              "prompt_cache_key": false,
+              "chat_completions": false,
+              "interleaved_reasoning": false,
+              "max_tokens_parameter": false
+            }
+          }
+        ]
+      },
+      "Antigravity": {
+        "api_url": "http://127.0.0.1:8123/v1",
+        "available_models": [
+          {
+            "name": "gemini-4-argon-high",
+            "display_name": "Argon High",
+            "max_tokens": 1048576,
+            "capabilities": {
+              "tools": true,
+              "images": true,
+              "parallel_tool_calls": false,
+              "prompt_cache_key": false,
+              "chat_completions": true,
+              "interleaved_reasoning": false,
+              "max_tokens_parameter": false
+            }
+          },
+          {
+            "name": "gemini-3.8-flash-low",
+            "display_name": "Gemini 3.8 Flash Low",
+            "max_tokens": 1048576,
+            "capabilities": {
+              "tools": true,
+              "images": true,
+              "parallel_tool_calls": false,
+              "prompt_cache_key": false,
+              "chat_completions": true,
+              "interleaved_reasoning": false,
+              "max_tokens_parameter": false
+            }
+          },
+          {
+            "name": "gemini-3.8-flash-medium",
+            "display_name": "Gemini 3.8 Flash Med",
+            "max_tokens": 1048576,
+            "capabilities": {
+              "tools": true,
+              "images": true,
+              "parallel_tool_calls": false,
+              "prompt_cache_key": false,
+              "chat_completions": true,
+              "interleaved_reasoning": false,
+              "max_tokens_parameter": false
+            }
+          },
+          {
+            "name": "gemini-3.8-flash-high",
+            "display_name": "Gemini 3.8 Flash High",
+            "max_tokens": 1048576,
+            "capabilities": {
+              "tools": true,
+              "images": true,
+              "parallel_tool_calls": false,
+              "prompt_cache_key": false,
+              "chat_completions": true,
+              "interleaved_reasoning": false,
+              "max_tokens_parameter": false
+            }
+          },
+          {
+            "name": "gemini-3.5-flash-lite",
+            "display_name": "Gemini 3.5 Flash Lite",
+            "max_tokens": 1048576,
+            "capabilities": {
+              "tools": true,
+              "images": true,
+              "parallel_tool_calls": false,
+              "prompt_cache_key": false,
+              "chat_completions": true,
+              "interleaved_reasoning": false,
+              "max_tokens_parameter": false
+            }
+          },
+          {
+            "name": "gemini-4-argon-low",
+            "display_name": "Argon Low",
+            "max_tokens": 1048576,
+            "capabilities": {
+              "tools": true,
+              "images": true,
+              "parallel_tool_calls": false,
+              "prompt_cache_key": false,
+              "chat_completions": true,
+              "interleaved_reasoning": false,
+              "max_tokens_parameter": false
+            }
+          },
+          {
+            "name": "gemini-4-argon-medium",
+            "display_name": "Argon Med",
+            "max_tokens": 1048576,
+            "capabilities": {
+              "tools": true,
+              "images": true,
+              "parallel_tool_calls": false,
+              "prompt_cache_key": false,
+              "chat_completions": true,
+              "interleaved_reasoning": false,
+              "max_tokens_parameter": false
+            }
+          }
+        ]
+      }
+    }
+  },
+  "agent_servers": {
+    "Antigravity": {
+      "default_config_options": {
+        "model": "gemini-4-argon",
+        "thought_level": "high"
+      },
+      "type": "custom",
+      "command": "/opt/homebrew/bin/agy",
+      "args": [
+        "acp"
+      ],
+      "favorite_config_option_values": {
+        "model": [
+          "gemini-4-argon",
+          "gemini-3.8-flash"
+        ],
+        "thought_level": [
+          "low",
+          "medium",
+          "high"
+        ]
+      }
+    },
+    "Grok": {
+      "type": "custom",
+      "command": "/opt/homebrew/bin/grok",
+      "args": [
+        "agent",
+        "stdio"
+      ],
+      "favorite_config_option_values": {
+        "reasoning_effort": [
+          "medium",
+          "high"
+        ]
+      },
+      "default_config_options": {
+        "reasoning_effort": "medium"
+      }
+    },
+    "OpenCode": {
+      "favorite_config_option_values": {
+        "effort": [
+          "low",
+          "high",
+          "max",
+          "default"
+        ],
+        "model": [
+          "opencode-go/deepseek-v4.1-flash",
+          "claude-agent/opus",
+          "opencode-go/glm-5.3-flash",
+          "opencode-go/qwen3.8-flash",
+          "opencode-go/mimo-v2.6-flash",
+          "opencode-go/mimo-v2.6-pro",
+          "opencode-go/muse-spark-1.3-contributor",
+          "opencode-go/claude-haiku-5-5",
+          "meta/muse-spark-1.3-contributor"
+        ]
+      },
+      "type": "custom",
+      "command": "/opt/homebrew/bin/opencode",
+      "args": [
+        "acp"
+      ],
+      "default_config_options": {
+        "mode": "build",
+        "effort": "high",
+        "model": "claude-agent/opus"
+      }
+    },
+    "Cursor": {
+      "type": "custom",
+      "command": "/opt/homebrew/bin/cursor-agent",
+      "args": [
+        "acp"
+      ],
+      "default_config_options": {
+        "fast": "false",
+        "model": "grok-4.7",
+        "mode": "agent"
+      }
+    },
+    "Claude (Mletras)": {
+      "favorite_config_option_values": {
+        "model": [
+          "opus"
+        ]
+      },
+      "type": "custom",
+      "command": "/opt/homebrew/bin/node",
+      "args": [
+        "/opt/homebrew/lib/node_modules/@agentclientprotocol/claude-agent-acp/dist/index.js"
+      ],
+      "env": {
+        "CAVEMAN_DEFAULT_MODE": "caveman",
+        "CLAUDE_CODE_EXECUTABLE": "/opt/homebrew/bin/claude"
+      },
+      "default_config_options": {
+        "mode": "plan",
+        "effort": "high",
+        "model": "opus"
+      }
+    },
+    "Claude (Luciana)": {
+      "favorite_config_option_values": {
+        "model": [
+          "opus"
+        ]
+      },
+      "type": "custom",
+      "command": "/opt/homebrew/bin/node",
+      "args": [
+        "/opt/homebrew/lib/node_modules/@agentclientprotocol/claude-agent-acp/dist/index.js"
+      ],
+      "env": {
+        "CAVEMAN_DEFAULT_MODE": "caveman",
+        "CLAUDE_CODE_EXECUTABLE": "/opt/homebrew/bin/claude",
+        "CLAUDE_CONFIG_DIR": "/Users/gusmunix/.claude-account2"
+      },
+      "default_config_options": {
+        "mode": "plan",
+        "effort": "high",
+        "model": "opus"
+      }
+    }
+  },
+  "agent": {
+    "profiles": {
+      "plan": {
+        "name": "Plan",
+        "tools": {
+          "read_file": true,
+          "grep": true,
+          "terminal": true,
+          "edit_file": true,
+          "write_file": true,
+          "create_directory": true,
+          "delete_path": true,
+          "move_path": true,
+          "copy_path": true,
+          "diagnostics": true,
+          "find_path": true,
+          "list_directory": true,
+          "fetch": true,
+          "skill": true,
+          "spawn_agent": true,
+          "list_agents_and_models": true
+        },
+        "enable_all_context_servers": false,
+        "context_servers": {},
+        "default_model": {
+          "provider": "Claude (Mletras)",
+          "model": "claude-opus-5-5",
+          "enable_thinking": true,
+          "effort": "high"
+        }
+      },
+      "implement": {
+        "name": "Implement",
+        "tools": {
+          "read_file": true,
+          "grep": true,
+          "terminal": true,
+          "edit_file": true,
+          "write_file": true,
+          "create_directory": true,
+          "delete_path": true,
+          "move_path": true,
+          "copy_path": true,
+          "diagnostics": true,
+          "find_path": true,
+          "list_directory": true,
+          "fetch": true,
+          "skill": true,
+          "spawn_agent": true,
+          "list_agents_and_models": true
+        },
+        "enable_all_context_servers": false,
+        "context_servers": {},
+        "default_model": {
+          "provider": "opencode",
+          "model": "go/deepseek-v4.1-flash",
+          "enable_thinking": true,
+          "effort": "high"
+        }
+      },
+      "hard": {
+        "name": "Hard",
+        "tools": {
+          "read_file": true,
+          "grep": true,
+          "terminal": true,
+          "edit_file": true,
+          "write_file": true,
+          "create_directory": true,
+          "delete_path": true,
+          "move_path": true,
+          "copy_path": true,
+          "diagnostics": true,
+          "find_path": true,
+          "list_directory": true,
+          "fetch": true,
+          "skill": true,
+          "spawn_agent": true,
+          "list_agents_and_models": true
+        },
+        "enable_all_context_servers": false,
+        "context_servers": {},
+        "default_model": {
+          "provider": "opencode",
+          "model": "go/deepseek-v4.1-flash",
+          "enable_thinking": true,
+          "effort": "xhigh"
+        }
+      },
+      "cheap": {
+        "name": "Cheap",
+        "tools": {
+          "read_file": true,
+          "grep": true,
+          "terminal": true,
+          "edit_file": true,
+          "write_file": true,
+          "create_directory": true,
+          "delete_path": true,
+          "move_path": true,
+          "copy_path": true,
+          "diagnostics": true,
+          "find_path": true,
+          "list_directory": true,
+          "fetch": true,
+          "skill": true,
+          "spawn_agent": true,
+          "list_agents_and_models": true
+        },
+        "enable_all_context_servers": false,
+        "context_servers": {},
+        "default_model": {
+          "provider": "opencode",
+          "model": "go/deepseek-v4.1-flash",
+          "enable_thinking": true,
+          "effort": "high"
+        }
+      },
+      "terminal": {
+        "name": "Terminal",
+        "tools": {
+          "read_file": true,
+          "grep": true,
+          "terminal": true,
+          "edit_file": true,
+          "write_file": true,
+          "create_directory": true,
+          "delete_path": true,
+          "move_path": true,
+          "copy_path": true,
+          "diagnostics": true,
+          "find_path": true,
+          "list_directory": true,
+          "fetch": true,
+          "skill": true,
+          "spawn_agent": true,
+          "list_agents_and_models": true
+        },
+        "enable_all_context_servers": false,
+        "context_servers": {},
+        "default_model": {
+          "provider": "opencode",
+          "model": "go/mimo-v2.6-pro"
+        }
+      },
+      "review": {
+        "name": "Review",
+        "tools": {
+          "read_file": true,
+          "grep": true,
+          "terminal": true,
+          "edit_file": false,
+          "spawn_agent": true,
+          "list_agents_and_models": true
+        },
+        "enable_all_context_servers": false,
+        "context_servers": {},
+        "default_model": {
+          "provider": "opencode",
+          "model": "go/deepseek-v4.1-flash",
+          "enable_thinking": true,
+          "effort": "high"
+        }
+      },
+      "long-context": {
+        "name": "Long context",
+        "tools": {
+          "read_file": true,
+          "grep": true,
+          "terminal": true,
+          "edit_file": false,
+          "spawn_agent": true,
+          "list_agents_and_models": true
+        },
+        "enable_all_context_servers": false,
+        "context_servers": {},
+        "default_model": {
+          "provider": "Antigravity",
+          "model": "gemini-4-argon-high",
+          "enable_thinking": true,
+          "effort": "high"
+        }
+      },
+      "muse": {
+        "name": "Muse",
+        "tools": {
+          "read_file": true,
+          "grep": true,
+          "terminal": true,
+          "edit_file": true,
+          "write_file": true,
+          "create_directory": true,
+          "delete_path": true,
+          "move_path": true,
+          "copy_path": true,
+          "diagnostics": true,
+          "find_path": true,
+          "list_directory": true,
+          "fetch": true,
+          "skill": true,
+          "spawn_agent": true,
+          "list_agents_and_models": true
+        },
+        "enable_all_context_servers": false,
+        "context_servers": {},
+        "default_model": {
+          "provider": "opencode",
+          "model": "go/muse-spark-1.3-contributor",
+          "enable_thinking": true,
+          "effort": "xhigh"
+        }
+      }
+    },
+    "default_profile": "write",
+    "default_model": {
+      "effort": "medium",
+      "provider": "Claude (Mletras)",
+      "model": "claude-sonnet-5-5",
+      "enable_thinking": true
+    },
+    "favorite_models": [
+      {
+        "provider": "opencode",
+        "model": "go/deepseek-v4.1-flash",
+        "enable_thinking": true,
+        "effort": "high"
+      },
+      {
+        "provider": "opencode",
+        "model": "go/glm-5.3-flash",
+        "enable_thinking": true,
+        "effort": "high"
+      },
+      {
+        "provider": "opencode",
+        "model": "go/qwen3.8-flash",
+        "enable_thinking": true,
+        "effort": "high"
+      },
+      {
+        "provider": "opencode",
+        "model": "go/claude-haiku-5-5",
+        "enable_thinking": true,
+        "effort": "medium"
+      },
+      {
+        "provider": "opencode",
+        "model": "go/muse-spark-1.3-contributor",
+        "enable_thinking": true,
+        "effort": "xhigh"
+      },
+      {
+        "provider": "Claude (Mletras)",
+        "model": "claude-opus-5-5",
+        "enable_thinking": true,
+        "effort": "high"
+      },
+      {
+        "provider": "Meta",
+        "model": "muse-spark-1.3-contributor",
+        "enable_thinking": true,
+        "effort": "xhigh"
+      },
+      {
+        "provider": "Antigravity",
+        "model": "gemini-4-argon-high",
+        "enable_thinking": true,
+        "effort": "high"
+      }
+    ],
+    "subagent_model": {
+      "provider": "opencode",
+      "model": "go/deepseek-v4.1-flash",
+      "enable_thinking": true,
+      "effort": "high"
+    },
+    "inline_assistant_model": {
+      "provider": "opencode",
+      "model": "go/claude-haiku-5-5"
+    },
+    "commit_message_model": {
+      "provider": "opencode",
+      "model": "go/glm-5.3-flash"
+    },
+    "thread_summary_model": {
+      "provider": "opencode",
+      "model": "go/claude-haiku-5-5"
+    },
+    "auto_compact": {
+      "threshold": "70%"
+    }
+  }
+}
