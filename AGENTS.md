@@ -69,8 +69,18 @@ Regras:
 
 Limites de provedor: `opencode-go` aceita high/xhigh/max; `claude-agent` aceita no máximo high. `claude-agent/opus` só em `plan`.
 
-## Modelos e custo
+## Custo
 
 Teto por 1M de tokens: input **$1,50**, output **$2,50**. Modelo acima do teto fica `disabled` no `opencode.jsonc`.
 
 `opencode-go/gemini-4-argon` custa $2/$10 e está bloqueado. Contexto longo usa `antigravity-shim/gemini-4-argon-high`, que consome cota Antigravity.
+
+## Usage das contas Claude
+
+Antes de delegar tarefa longa para `claude-agent` ou `claude-luciana`, confira a cota:
+
+```bash
+sh /Users/gusmunix/Developer/misc/claude-zed-shim/scripts/macos/usage.sh 2>&1 | grep -E "conta|session"
+```
+
+A saída mostra o percentual da sessão atual e o horário de reset por conta.
